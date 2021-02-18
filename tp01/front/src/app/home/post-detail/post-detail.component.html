@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="header">
+        <div *ngIf="post.user">{{post.user.mail}} - le <i>{{post.CreatedAt | date: 'dd/MM/yyyy hh:mm:ss'}}</i></div>
+        <div>
+            <mat-icon *ngIf="!post.isLike" (click)="emitLike()">favorite_border</mat-icon>
+            <mat-icon *ngIf="post.isLike" (click)="emitUnLike()">favorite</mat-icon>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <p>
+            {{post.Content}}
+        </p>
+    </div>
+</div>

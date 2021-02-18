@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="form">
+        <h3>Ecrire un nouveau post</h3>
+        <textarea matInput [(ngModel)]="textToPost"  maxlength="255" rows="4"></textarea>
+        <button mat-mini-fab color="primary" (click)="sendPost()">
+            <mat-icon>send</mat-icon>
+        </button>
+    </div>
+    <div class="feed">
+        <h3>Feed</h3>
+        <app-post-detail *ngFor="let item of posts" [post]="item" (like)="sendLike($event)" (unlike)="deleteLike($event)"></app-post-detail>
+    </div>
+</div>

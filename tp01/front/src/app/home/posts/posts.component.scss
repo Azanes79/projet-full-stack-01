@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+}
+.form {
+    border: 5px solid #3f51b5;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: -webkit-fill-available;
+    textarea {
+        background-color: #0c0c0c14;
+        border-radius: 10px;
+        padding: 10px;
+        width: -webkit-fill-available;
+        margin-bottom: 10px;
+        resize: none;
+        color: white;
+    }
+    
+    button {
+        align-self: flex-end;
+    }
+}
+.feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+
+    h3 {
+        width: -webkit-fill-available;
+        text-align: center;
+        background-color: #4a4a4a;
+    }
+}
+
+app-post-detail {
+    border: 5px solid #3f51b5;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: -webkit-fill-available;;
+}
